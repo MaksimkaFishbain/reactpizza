@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: #AF2A1E;
+}
+
+.wrapper {
+  margin: 0 170px;
+  padding-top: 1px;
+  min-width: 500px;
+  background-color: #FEF6D1;
+  border-radius: 30px;
+
+  .header {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 31px;
+    display: flex;
+
+    @media screen and (max-width: 997px) {
+      display: block;
+      flex-flow: column wrap;
+    }
+
+    .logo {
+      font-family: 'Send Flowers', cursive;
+      text-shadow: 1px 1px #cfc0c0;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      top: -30px;
+      left: 100px;
+      width: 300px;
+      height: 100px;
+
+      img {
+        margin-right: 15px;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .search {
+      display: flex;
+      position: absolute;
+      align-items: center;
+      right: 40%;
+      background-color: #FFFFFF;
+      padding-left: 30px;
+      width: 354px;
+      height: 55px;
+      border-radius: 40px;
+      box-shadow: 1px 1px 1px 1px #ccc inset;
+
+      input {
+        color: #908C8C;
+        margin-left: 8px;
+        border: none;
+        outline: none;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .currentPayment {
+      background-color: #FFFFFF;
+      display: flex;
+      position: absolute;
+      right: 50px;
+      height: 55px;
+      border-radius: 40px;
+      width: 200px;
+      box-shadow: 5px 5px #cfc0c0;
+
+      #fst {
+        border-radius: 40px 0 0 40px;
+        width: 50%;
+        border-left: white;
+        border-top: white;
+        border-bottom: white;
+        background-color: #FFFFFF;
+      }
+
+      #sec {
+        border-radius: 0 40px 30px 0;
+        width: 50%;
+        background-color: #FFFFFF;
+        border: none;
+      }
+    }
+  }
+
+  .sortings {
+    display: flex;
+    border-top: 2px solid black;
+    margin-top: 140px;
+    border-bottom: 2px solid black;
+    background-color: #F9E9A2;
+    height: 200px;
+    margin-bottom: 50px;
+    border-radius: 0 20px;
+    font-size: 20px;
+
+
+    #left {
+      width: 510px;
+      border-right: 1px dashed rgba(0, 0, 0, 0.5);
+      padding-right: 40px;
+      padding-top: 20px;
+
+      li:first-child {
+        margin: auto;
+        text-align: center;
+        width: 160px;
+        color: white;
+        background-color: black;
+        margin-bottom: 20px;
+        height: 25px;
+        border-radius: 5px;
+      }
+
+      li:nth-child(2) {
+        margin: auto;
+        text-align: center;
+        color: white;
+        background: green;
+        margin-bottom: 20px;
+        width: 160px;
+        height: 25px;
+        border-radius: 5px;
+      }
+
+      li:last-child {
+        margin: auto;
+        text-align: center;
+        background-color: #AF2A1E;
+        color: white;
+        margin-bottom: 20px;
+        width: 160px;
+        height: 25px;
+        border-radius: 5px;
+      }
+
+
+    }
+
+    #center {
+      padding-top: 20px;
+      padding-left: 170px;
+      height: 155px;
+      width: 510px;
+      border-right: 1px dashed rgba(0, 0, 0, 0.5);
+      margin-top: 20px;
+
+      li:first-child {
+        margin-bottom: 20px;
+      }
+      input {
+        height: 44px;
+        width: 102px;
+        margin: 5px;
+        border-radius: 20px;
+        background-color: #FEF6D1;
+        box-shadow: 1px 1px 1px 1px #000 inset;
+      }
+    }
+
+    #right {
+      width: 510px;
+      margin-top: 20px;
+      padding-right: 40px;
+    }
+  }
+
+}
+
+.menu {
+  width: 1547px;
+  margin-left: 20px;
+
+  .card {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 277px;
+    height: 295px;
+    border: 1px solid black;
+    background-color: transparent;
+  }
+}
+
+
+
+li {
+  list-style-type: none;
+}
+
+.pizzaBackground {
+  .leftSide {
+    z-index: -1;
+    position: absolute;
+    left: -120px;
+    display: flex;
+    flex-flow: column wrap;
+    float: left;
+    img {
+      margin-bottom: 20px;
+    }
+  }
+  .rightSide {
+    z-index: -1;
+    position: absolute;
+    right: -120px;
+    display: flex;
+    flex-flow: column wrap;
+    float: right;
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}
