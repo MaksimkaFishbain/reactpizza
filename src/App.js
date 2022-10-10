@@ -50,31 +50,47 @@ function App() {
         </div>
         <div className="menu">
           <div className="card">
-
-          </div>
-          <div className="card">
-
-          </div>
-          <div className="card">
-
-          </div>
-          <div className="card">
-
-          </div>
-          <div className="card">
-
-          </div>
-          <div className="card">
-
-          </div>
-          <div className="card">
-
-          </div>
-          <div className="card">
-
-          </div>
-          <div className="card">
-
+            <div className="aboutPizza">
+              <h2>Name</h2>
+              <form>
+                <button></button>
+                <button></button>
+                <button></button>
+              </form>
+              <form>
+                <button></button>
+                <button></button>
+              </form>
+              <h3>Cost: </h3>
+            </div>
+          </div><div className="card">
+            <div className="aboutPizza">
+              <h2>Name</h2>
+              <form>
+                <button></button>
+                <button></button>
+                <button></button>
+              </form>
+              <form>
+                <button></button>
+                <button></button>
+              </form>
+              <h3>Cost: </h3>
+            </div>
+          </div><div className="card">
+            <div className="aboutPizza">
+              <h2>Name</h2>
+              <form>
+                <button></button>
+                <button></button>
+                <button></button>
+              </form>
+              <form>
+                <button></button>
+                <button></button>
+              </form>
+              <h3>Cost: </h3>
+            </div>
           </div>
         </div>
       </div>

@@ -52,12 +52,12 @@ body {
       right: 40%;
       background-color: #FFFFFF;
       padding-left: 30px;
-      width: 354px;
-      height: 55px;
+      width: 564px;
+      height: 70px;
       border-radius: 40px;
       box-shadow: 1px 1px 1px 1px #ccc inset;
 
-      input {
+      input[type="text"] {
         color: #908C8C;
         margin-left: 8px;
         border: none;
@@ -190,8 +190,8 @@ body {
     display: inline-block;
     margin-top: 15px;
     margin-left: 20px;
-    width: 277px;
-    height: 295px;
+    width: 278px;
+    height: 285px;
     border: 1px solid black;
     background-color: transparent;
   }
