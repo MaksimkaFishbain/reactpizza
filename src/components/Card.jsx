@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Modal from "./Modal";
+
 
 const Card = (props) => {
+    const [isOpened, setIsOpened] = useState(false);
     return (
         <div className="card">
-            <img className="info" src="/images/info.png" alt="info"/>
+            <img className="info" src="/images/info.png" alt="info" onClick={() => setIsOpened(true)}/>
             <img className="pizzaImage" src= {props.image} alt="pizza" />
             <div className="aboutPizza">
                 <h1>{props.title}</h1>
@@ -20,6 +23,7 @@ const Card = (props) => {
                 </div>
                 <h2>{props.price} BYN</h2>
             </div>
+            <Modal isOpened={isOpened} setIsOpened={setIsOpened}/>
         </div>
     );
 };
