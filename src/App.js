@@ -1,4 +1,7 @@
 import "./styles.scss"
+import Header from "./components/Header";
+import Sortings from "./components/Sortings";
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -18,80 +21,14 @@ function App() {
         </div>
       </div>
       <div className="wrapper">
-        <form className="header">
-          <div className="logo">
-            <img src="/images/pizza.png" alt="logo"/>
-            <h1>Pizza iz zada</h1>
-          </div>
-          <div className="search">
-            <img src="/images/search.png" />
-            <input type={"text"} placeholder="Search..." />
-          </div>
-          <div className="currentPayment">
-            <button id="fst">7000$</button>
-            <button id="sec">Basket</button>
-          </div>
-        </form>
-        <div className="sortings">
-          <ol id="left">
-            <li padding-right="200px">Все</li>
-            <li padding-right="300px">Мясные</li>
-            <li padding-right="400px">Вегетарианские</li>
-          </ol>
-          <ol id="center">
-            <li>От <input/> руб.</li>
-            <li>До <input /> руб.</li>
-          </ol>
-          <ol id="right">
-            <li>Сортировать по...</li>
-            <li>.выпадающий список тут типа"</li>
-          </ol>
-
-        </div>
+        <Header />
+        <Sortings />
         <div className="menu">
-          <div className="card">
-            <div className="aboutPizza">
-              <h2>Name</h2>
-              <form>
-                <button></button>
-                <button></button>
-                <button></button>
-              </form>
-              <form>
-                <button></button>
-                <button></button>
-              </form>
-              <h3>Cost: </h3>
-            </div>
-          </div><div className="card">
-            <div className="aboutPizza">
-              <h2>Name</h2>
-              <form>
-                <button></button>
-                <button></button>
-                <button></button>
-              </form>
-              <form>
-                <button></button>
-                <button></button>
-              </form>
-              <h3>Cost: </h3>
-            </div>
-          </div><div className="card">
-            <div className="aboutPizza">
-              <h2>Name</h2>
-              <form>
-                <button></button>
-                <button></button>
-                <button></button>
-              </form>
-              <form>
-                <button></button>
-                <button></button>
-              </form>
-              <h3>Cost: </h3>
-            </div>
-          </div>
+          <Card title={"Пепперонни"} price={120}/>
+          <Card title={"Салями"} price={99}/>
+          <Card title={"Гавайская"} price={81}/>
+          <Card title={"Грибная"} price={144}/>
+          <Card title={"4 сезона"} price={120}/>
         </div>
       </div>
     </div>
