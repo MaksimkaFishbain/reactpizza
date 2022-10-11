@@ -13,8 +13,14 @@ const Sortings = () => {
                 <li>До <input /> руб.</li>
             </ol>
             <ol id="right">
-                <li>Сортировать по...</li>
-                <li>.выпадающий список тут типа"</li>
+                <li>
+                    <p>Сортировать по:</p>
+                    <select>
+                        <option value={"1"}>названию</option>
+                        <option value={"2"}>цене</option>
+                        <option value={"3"}>популярности</option>
+                    </select>
+                </li>
             </ol>
         </div>
     );
