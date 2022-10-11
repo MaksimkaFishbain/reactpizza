@@ -24,11 +24,11 @@ function App() {
         <Header />
         <Sortings />
         <div className="menu">
-          <Card title={"Пепперонни"} price={120}/>
-          <Card title={"Салями"} price={99}/>
-          <Card title={"Гавайская"} price={81}/>
-          <Card title={"Грибная"} price={144}/>
-          <Card title={"4 сезона"} price={120}/>
+          <Card title={"Пепперонни"} image={"/images/pizzaPeperoni.png"} price={120}/>
+          <Card title={"Салями"} price={99} image={"/images/pizzaSalami.png"}/>
+          <Card title={"Гавайская"} price={81} image={"/images/pizzaGavaiskia.png"}/>
+          <Card title={"Грибная"} price={144} image={"/images/pizzaGribnaia.png"}/>
+          <Card title={"4 сезона"} image={"/images/pizzaFourSesons.png"} price={120}/>
         </div>
       </div>
     </div>

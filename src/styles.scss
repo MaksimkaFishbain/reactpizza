@@ -202,13 +202,21 @@ body {
     box-shadow: inset 0px 0px 5px 10px rgba(0,0,0,0.1);
     font-family: 'Forum', cursive;
 
-    img {
+    .pizzaImage {
       position: absolute;
       margin-top: 15px;
       left: 9%;
       z-index: -1;
       width: 230px;
       height: 230px;
+    }
+    .pizzaImage:hover{
+      margin-top: 5px;
+    }
+    .info{
+      margin-left: 15px;
+      margin-top:10px;
+      cursor: pointer;
     }
 
     .aboutPizza {
