@@ -7,20 +7,17 @@ const Sortings = () => {
                 <li padding-right="200px">Все</li>
                 <li padding-right="300px">Мясные</li>
                 <li padding-right="400px">Вегетарианские</li>
+                <li padding-right="400px">Особые</li>
             </ol>
             <ol id="center">
                 <li>От <input/> руб.</li>
                 <li>До <input /> руб.</li>
             </ol>
             <ol id="right">
-                <li>
-                    <p>Сортировать по:</p>
-                    <select>
-                        <option value={"1"}>названию</option>
-                        <option value={"2"}>цене</option>
-                        <option value={"3"}>популярности</option>
-                    </select>
-                </li>
+                <p>Сортировать по:</p>
+                <li><button>Популярности</button></li>
+                <li><button>Цене</button></li>
+                <li><button>Алфавиту</button></li>
             </ol>
         </div>
     );

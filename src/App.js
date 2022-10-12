@@ -25,9 +25,9 @@ function App() {
         <Sortings />
         <div className="menu">
           <Card title={"Пепперонни"} image={"/images/pizzaPeperoni.png"} price={120}/>
-          <Card title={"Салями"} price={99} image={"/images/pizzaSalami.png"}/>
-          <Card title={"Гавайская"} price={81} image={"/images/pizzaGavaiskia.png"}/>
-          <Card title={"Грибная"} price={144} image={"/images/pizzaGribnaia.png"}/>
+          <Card title={"Салями"} image={"/images/pizzaSalami.png"} price={99}/>
+          <Card title={"Гавайская"}  image={"/images/pizzaGavaiskia.png"} price={81}/>
+          <Card title={"Грибная"}  image={"/images/pizzaGribnaia.png"} price={144}/>
           <Card title={"4 сезона"} image={"/images/pizzaFourSesons.png"} price={120}/>
         </div>
       </div>

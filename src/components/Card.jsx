@@ -7,7 +7,7 @@ const Card = (props) => {
     return (
         <div className="card">
             <img className="info" src="/images/info.png" alt="info" onClick={() => setIsOpened(true)}/>
-            <img className="pizzaImage" src= {props.image} alt="pizza" />
+            <img src= {props.image} alt="pizza" />
             <div className="aboutPizza">
                 <h1>{props.title}</h1>
                 <div className={"buttons"}>
