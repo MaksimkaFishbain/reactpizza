@@ -246,7 +246,6 @@ body {
     box-shadow: inset 0px 0px 5px 10px rgba(0,0,0,0.1);
     font-family: 'Forum', cursive;
 
-
     img:nth-child(2) {
       position: absolute;
       margin-top: 15px;
@@ -264,6 +263,7 @@ body {
     }
 
     .aboutPizza {
+      position: absolute;
       display: flow;
       text-align: center;
       background-color: #FEF6D1;
@@ -298,7 +298,6 @@ body {
         align-items: center;
         button {
           margin: 0;
-          padding: -2px;
           font-size: 2.05vh ;
         }
       }
@@ -319,7 +318,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -333,6 +332,7 @@ body {
     background-color: aliceblue;
     height: 500px;
     width: 700px;
+    z-index: 100;
   }
 }
 

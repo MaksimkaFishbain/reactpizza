@@ -238,6 +238,7 @@ body {
   cursor: pointer;
 }
 .menu .card .aboutPizza {
+  position: absolute;
   display: flow;
   text-align: center;
   background-color: #FEF6D1;
@@ -272,7 +273,6 @@ body {
 }
 .menu .card .aboutPizza .second button {
   margin: 0;
-  padding: -2px;
   font-size: 2.05vh;
 }
 .menu .card .aboutPizza h2 {
@@ -289,7 +289,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,6 +303,7 @@ body {
   background-color: aliceblue;
   height: 500px;
   width: 700px;
+  z-index: 100;
 }
 
 /*# sourceMappingURL=styles.css.map */
