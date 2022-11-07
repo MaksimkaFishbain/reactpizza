@@ -157,25 +157,15 @@ body {
         width: 160px;
         height: 25px;
         color: white;
-        background-color: black;
         border-radius: 5px;
+        background: rgb(255, 0, 0);
         cursor: pointer;
       }
 
       li:nth-child(2) {
         text-align: center;
         color: white;
-        background: green;
-        width: 160px;
-        height: 25px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      li:nth-child(3) {
-        text-align: center;
-        background-color: #AF2A1E;
-        color: white;
+        background: rgb(37, 186, 11);
         width: 160px;
         height: 25px;
         border-radius: 5px;
@@ -185,11 +175,13 @@ body {
       li:last-child {
         text-align: center;
         color: white;
-        background: cornflowerblue;
+        background: linear-gradient(225deg, rgb(38, 255, 0) 3%, rgb(255, 0, 0) 94%);
         width: 160px;
         height: 25px;
         border-radius: 5px;
         cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
       }
 
 
@@ -318,7 +310,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,5 +326,19 @@ body {
     width: 700px;
     z-index: 100;
   }
+}
+
+.cart-block {
+  position: fixed;
+  right: -8px;
+  top: -5px;
+  height: 101%;
+  width: 400px;
+  background-color: #FFFFFF;
+  z-index: 105;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: none;
 }
 

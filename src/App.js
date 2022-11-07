@@ -1,28 +1,83 @@
 import "./styles.scss"
 import Header from "./components/Header";
-import Sortings from "./components/Sortings";
+import Sorting from "./components/Sorting";
 import Card from "./components/Card";
 import PizzaBackground from "./components/PizzaBackground";
+import React, {useState} from "react";
+import Cart from "./components/Cart";
 
 function App() {
 
-  function recipe() {
-    return `
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  `
+  // type: 1 - мясная, 2 - вегетарианиская
+  const data = [
+    {
+      title: "Пепперонни",
+      image: "/images/pizzaPeperoni.png",
+      price: 120,
+      modalContent: "20 грамм картошки",
+      isMeat: 1
+    },
+    {
+      title: "Салями",
+      image: "/images/pizzaSalami.png",
+      price: 99,
+      modalContent: "40 грамм мандавошки",
+      isMeat: 1
+    },
+    {
+      title: "Гавайская",
+      image: "/images/pizzaGavaiskia.png",
+      price: 81,
+      modalContent: "15 мандаринок",
+      isMeat: 1
+    },
+    {
+      title: "Грибная",
+      image: "/images/pizzaGribnaia.png",
+      price: 144,
+      modalContent: "90 ведер воды",
+      isMeat: 0,
+    },
+    {
+      title: "4 сезона",
+      image: "/images/pizzaFourSesons.png",
+      price: 120,
+      modalContent: "150 домов",
+      isMeat: 0,
+    }
+  ]
+
+  const [isFilled, setIsFilled] = useState(2)
+
+  function cardsRender(func) {
+    return func.map(({...item}, index) =>
+        <Card
+            key = {index}
+            {...item}
+        />
+    )
   }
+
+  function sortByFiller(filler) {
+    if ((filler === 0) || (filler === 1)) {
+      return data.filter(i => {
+        return i.isMeat === filler
+      })
+    } else {
+      return data
+    }
+  }
+
+  console.log(isFilled)
   return (
     <div className="App">
       <PizzaBackground />
+      <Cart />
       <div className="wrapper">
         <Header />
-        <Sortings />
+        <Sorting isFilled={isFilled} setIsFilled={(id) => setIsFilled(id)} />
         <div className="menu">
-          <Card title={"Пепперонни"} image={"/images/pizzaPeperoni.png"} price={120} modalContent={recipe}/>
-          <Card title={"Салями"} image={"/images/pizzaSalami.png"} price={99} modalContent={recipe}/>
-          <Card title={"Гавайская"}  image={"/images/pizzaGavaiskia.png"} price={81} modalContent={recipe}/>
-          <Card title={"Грибная"}  image={"/images/pizzaGribnaia.png"} price={144} modalContent={recipe}/>
-          <Card title={"4 сезона"} image={"/images/pizzaFourSesons.png"} price={120} modalContent={recipe}/>
+          {cardsRender(sortByFiller(isFilled))}
         </div>
       </div>
     </div>

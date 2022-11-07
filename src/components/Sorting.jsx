@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Sortings = () => {
+const Sorting = ({isFilled, setIsFilled}) => {
+
     return (
         <div className="sortings">
             <ol id="left">
-                <li padding-right="200px">Все</li>
-                <li padding-right="300px">Мясные</li>
-                <li padding-right="400px">Вегетарианские</li>
-                <li padding-right="400px">Особые</li>
+                <li padding-right="300px" onClick={() => setIsFilled(1)}>Мясные</li>
+                <li padding-right="400px" onClick={() => setIsFilled(0)}>Вегетарианские</li>
+                <li padding-right="200px" onClick={() => setIsFilled(2)}>Все</li>
             </ol>
             <ol id="center">
                 <li>От <input/> руб.</li>
@@ -23,4 +23,4 @@ const Sortings = () => {
     );
 };
 
-export default Sortings;
+export default Sorting;

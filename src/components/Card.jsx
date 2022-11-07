@@ -2,15 +2,17 @@ import React, {useState} from 'react';
 import Modal from "./Modal";
 
 
-const Card = (props) => {
+const Card = ({image, title, price, modalContent}) => {
+
     const [isOpened, setIsOpened] = useState(false);
+
     return (
         <div className="card">
             <img className="info" src="/images/info.png" alt="info" onClick={() => setIsOpened(true)}/>
-            <img src= {props.image} alt="pizza" />
+            <img src= {image} alt="pizza" />
             <div className="aboutPizza">
-                <h1>{props.title}</h1>
-                <div className={"buttons"}>
+                <h1>{title}</h1>
+                <div className="buttons">
                     <form className="first">
                         <button>20 см</button>
                         <button>25 см</button>
@@ -21,9 +23,9 @@ const Card = (props) => {
                         <button>Тонкое тесто</button>
                     </form>
                 </div>
-                <h2>{props.price} BYN</h2>
+                <h2>{price} BYN</h2>
+                <Modal isOpened={isOpened} setIsOpened={setIsOpened} modalContent={modalContent}/>
             </div>
-            <Modal isOpened={isOpened} setIsOpened={setIsOpened}/>
         </div>
     );
 };
