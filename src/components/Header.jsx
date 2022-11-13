@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Header = () => {
+const Header = ({setValue, setIsRender, filterByTitle}) => {
+
     return (
         <div>
             <form className="header">
@@ -10,7 +11,10 @@ const Header = () => {
                 </div>
                 <div className="search">
                     <img src="/images/search.png" />
-                    <input type={"text"} placeholder="Поиск..." />
+                    <input type={"text"} placeholder="Поиск..." onChange={(e) => {
+                        setValue(e.target.value)
+                        setIsRender(filterByTitle)
+                    }}/>
                 </div>
                 <div className="currentPayment">
                     <button id="fst">7000 BYN</button>

@@ -90,6 +90,8 @@ body {
       box-shadow: 1px 1px 1px 1px #ccc inset;
 
       input[type="text"] {
+        width: 90%;
+        height: 80%;
         color: #908C8C;
         margin-left: 8px;
         border: none;
@@ -130,7 +132,7 @@ body {
     }
   }
 
-  .sortings {
+  .sorting {
     display: flex;
     border-top: 2px solid black;
     margin-top: 140px;
@@ -198,6 +200,7 @@ body {
       border-right: 1px dashed rgba(0, 0, 0, 0.5);
 
       input {
+        text-align: center;
         height: 44px;
         width: 102px;
         margin: 5px;

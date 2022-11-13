@@ -87,6 +87,8 @@ body {
   box-shadow: 1px 1px 1px 1px #ccc inset;
 }
 .wrapper .header .search input[type=text] {
+  width: 90%;
+  height: 80%;
   color: #908C8C;
   margin-left: 8px;
   border: none;
@@ -120,7 +122,7 @@ body {
   background-color: #FFFFFF;
   border: none;
 }
-.wrapper .sortings {
+.wrapper .sorting {
   display: flex;
   border-top: 2px solid black;
   margin-top: 140px;
@@ -131,7 +133,7 @@ body {
   border-radius: 0 20px;
   font-size: 20px;
 }
-.wrapper .sortings #left {
+.wrapper .sorting #left {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -141,7 +143,7 @@ body {
   padding-top: 20px;
   border-spacing: 20px;
 }
-.wrapper .sortings #left li:first-child {
+.wrapper .sorting #left li:first-child {
   text-align: center;
   width: 160px;
   height: 25px;
@@ -150,7 +152,7 @@ body {
   background: rgb(255, 0, 0);
   cursor: pointer;
 }
-.wrapper .sortings #left li:nth-child(2) {
+.wrapper .sorting #left li:nth-child(2) {
   text-align: center;
   color: white;
   background: rgb(37, 186, 11);
@@ -159,7 +161,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-.wrapper .sortings #left li:last-child {
+.wrapper .sorting #left li:last-child {
   text-align: center;
   color: white;
   background: linear-gradient(225deg, rgb(38, 255, 0) 3%, rgb(255, 0, 0) 94%);
@@ -170,7 +172,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.wrapper .sortings #center {
+.wrapper .sorting #center {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -180,7 +182,8 @@ body {
   width: 510px;
   border-right: 1px dashed rgba(0, 0, 0, 0.5);
 }
-.wrapper .sortings #center input {
+.wrapper .sorting #center input {
+  text-align: center;
   height: 44px;
   width: 102px;
   margin: 5px;
@@ -188,14 +191,14 @@ body {
   background-color: #FEF6D1;
   box-shadow: 1px 1px 1px 1px #000 inset;
 }
-.wrapper .sortings #right {
+.wrapper .sorting #right {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 510px;
   padding: 0px 0px 30px 10px;
 }
-.wrapper .sortings #right select {
+.wrapper .sorting #right select {
   cursor: pointer;
 }
 
