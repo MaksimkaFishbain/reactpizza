@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Cart = () => {
+
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
         <div>
             <div className="cart-block">

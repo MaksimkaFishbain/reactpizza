@@ -187,9 +187,7 @@ body {
   height: 44px;
   width: 102px;
   margin: 5px;
-  border-radius: 20px;
   background-color: #FEF6D1;
-  box-shadow: 1px 1px 1px 1px #000 inset;
 }
 .wrapper .sorting #right {
   display: flex;
